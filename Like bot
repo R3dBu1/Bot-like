@@ -1,0 +1,12 @@
+import pyautogui
+import time
+import keyboard
+import webbrowser
+webbrowser.open("https://www.instagram.com/")
+
+while not keyboard.is_pressed("esc"):
+
+    if pyautogui.locateOnScreen(r'C:\Users\bouro\Desktop\ytb\inima.png' , confidence=0.7,region=(250,50,1000,1000))!=None:
+        pyautogui.click(pyautogui.locateOnScreen(r'C:\Users\bouro\Desktop\ytb\inima.png' , confidence=0.7,region=(250,50,1000,1000)))
+    else:
+        pyautogui.scroll(-200)
